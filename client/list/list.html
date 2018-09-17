@@ -1,9 +1,22 @@
  <template name="list">
     
-    <ul>
+  <div class="row">
+    <div class="col-xs-12">
+
       {{#each tarefas}}
-      <li> {{nome}} </li>
+      <div class="row">
+
+        <div class="col-xs-11">
+         {{formataData}} - {{nome}}
+        </div>
+        <div class="col-xs-1">
+          <button class="btn btn-danger">Excluir</button>
+        </div>  
+      </div>
+      <hr>
       {{/each}}
-    </ul>
+
+    </div>
+  </div>
   </template>
   
