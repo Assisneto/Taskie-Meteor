@@ -1,6 +1,8 @@
-Meteor.startup(()=>{
 
-  Meteor.publish("tarefas",()=>{
-    return Tarefas.find({});
+Meteor.startup(function(){
+
+  Meteor.publish("tarefas",function(){
+    return Tarefas.find({usuario:this.userId});
   })
+
 });

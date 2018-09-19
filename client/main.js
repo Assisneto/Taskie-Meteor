@@ -1,4 +1,6 @@
+
 Meteor.startup(()=>{
 
-  Meteor.subscribe("tarefas")
+  Meteor.subscribe("tarefas");
+  
 });

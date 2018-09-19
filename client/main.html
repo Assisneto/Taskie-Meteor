@@ -7,8 +7,11 @@
 
   <main class="container">
     
-    {{> adicionarTarefa}}
-    {{> list}}
-
+    {{#if currentUser}}
+      {{> adicionarTarefa}}
+      {{> list}}
+    {{else}}
+      <span>Voce deve esta logado</span>
+    {{/if}}  
   </main>
 </body>

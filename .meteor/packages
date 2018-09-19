@@ -19,3 +19,7 @@ blaze-html-templates
 mrt:bootstrap-3
 momentjs:moment
 jquery
+accounts-base
+accounts-password
+stylus
+ian:accounts-ui-bootstrap-3

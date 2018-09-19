@@ -1,6 +1,7 @@
 Meteor.methods({
-    adiciona :(obj)=>{
-      Tarefas.insert({nome:obj.nome,date:new Date()});
+    adiciona :function(obj){
+      Tarefas.insert({nome:obj.nome,usuario:this.userId,date:new Date()});
+      
     },
     excluir:(id)=>{
       Tarefas.remove({_id:id});
